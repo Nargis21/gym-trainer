@@ -34,7 +34,7 @@
 .form-submit {
     width: 415px;
     height: 55px;
-    background-color: rgba(255, 153, 0, 0.3);
+    background-color: goldenrod;
     font-size: 20px;
     border: none;
     border-radius: 5px;
@@ -43,7 +43,7 @@
 }
 
 .form-submit:hover {
-    background-color: rgba(255, 153, 0, 0.5);
+    background-color: #C2A43B;
 }
 
 .form-link {

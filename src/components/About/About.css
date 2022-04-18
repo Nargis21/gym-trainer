@@ -1,0 +1,13 @@
+.about img {
+    height: 20%;
+    width: 20%;
+}
+
+.about {
+    text-align: center;
+    margin: 20px;
+}
+
+.about p {
+    font-weight: 500;
+}

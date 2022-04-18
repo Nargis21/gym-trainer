@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "SMALL GROUP PERSONAL TRAINING",
+        "price": "599",
+        "description": "Our Small Group Personal Training is unlike anything you'll have experienced before. In micro training groups of just 6:1, all your workouts are customised, recorded and coached by an experienced personal trainer. The balance of the motivational group environment and 1-2-1 attention makes it the perfect mix to produce fast results, without the bounce back ",
+        "img": "https://i.ibb.co/QMFy3YM/service1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "1-2-1 PERSONAL TRAINING",
+        "price": "1599",
+        "description": "1-2-1 personal training is the ultimate investment in your health. You'll be working directly with your coach in our private studio, following a bespoke plan to ensure you hit your goals in record time. Whether you want to slim down, add muscle or anything in between, our personal training packages will get you there in a fun and sustainable way",
+        "img": "https://i.ibb.co/n1R8DL4/service2.jpg"
+    },
+    {
+        "id": 3,
+        "name": " NUTRITION Guide",
+        "price": "299",
+        "description": "We'll teach you how to take control of your health and weight, without relying on any specific diet or products, with our 1-2-1 nutrition coaching. You'll working alongside a qualified nutritionist to build a sustainable approach together, so you'll not only hit your physique goals, but be able to stay there without rigid diets or unrealistic restrictions",
+        "img": "https://i.ibb.co/269H7NR/service3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "ONLINE TRAINING",
+        "price": "1099",
+        "description": "The Armoury's Online Coaching Packages have been created to take the guesswork out of getting in the best shape of your life. You'll be working 1-2-1 with your Personal Trainer through our Armoury Coaching app- where you'll get workouts designed specifically for you, progress monitored, regular check-ins and nutrition support for unrivalled results, anywhere in the world ",
+        "img": "https://i.ibb.co/LRrhk6t/service4.jpg"
+    }
+]

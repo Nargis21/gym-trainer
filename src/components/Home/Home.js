@@ -1,46 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import banner from '../../images/banner.jpg'
 import './Home.css'
-import service1 from '../../images/service1.jpg'
-import service2 from '../../images/service2.jpg'
-import service3 from '../../images/service3.jpg'
-import service4 from '../../images/service4.jpg'
 import Service from '../Service/Service';
 import Review from '../Review/Review';
 
-const services = [
-    {
-        id: 1,
-        name: 'SMALL GROUP PERSONAL TRAINING', price: '599',
-        description: "Our Small Group Personal Training is unlike anything you'll have experienced before. In micro training groups of just 6:1, all your workouts are customised, recorded and coached by an experienced personal trainer. The balance of the motivational group environment and 1-2-1 attention makes it the perfect mix to produce fast results, without the bounce back ",
-        img: service1
-    },
-    {
-        id: 2,
-        name: '1-2-1 PERSONAL TRAINING', price: '1599',
-        description: "1-2-1 personal training is the ultimate investment in your health. You'll be working directly with your coach in our private studio, following a bespoke plan to ensure you hit your goals in record time. Whether you want to slim down, add muscle or anything in between, our personal training packages will get you there in a fun and sustainable way",
-        img: service2
-    },
-    {
-        id: 3,
-        name: 'NUTRITION Guide', price: '299',
-        description: "We'll teach you how to take control of your health and weight, without relying on any specific diet or products, with our 1-2-1 nutrition coaching. You'll working alongside a qualified nutritionist to build a sustainable approach together, so you'll not only hit your physique goals, but be able to stay there without rigid diets or unrealistic restrictions",
-        img: service3
-    },
-    {
-        id: 4,
-        name: 'ONLINE TRAINING', price: '1099',
-        description: "The Armoury's Online Coaching Packages have been created to take the guesswork out of getting in the best shape of your life. You'll be working 1-2-1 with your Personal Trainer through our Armoury Coaching app- where you'll get workouts designed specifically for you, progress monitored, regular check-ins and nutrition support for unrivalled results, anywhere in the world ",
-        img: service4
-    },
-
-]
 const reviews = [
     { id: 1, name: '​Lucy Eagles', review: '"Rob is great, always there with help and advise which you can trust to talk to. I can now train at home saving time whilst being more efficient."' },
     { id: 2, name: '​Alison Salkeld-Brown', review: '"Robs online coaching has helped me feel more comfortable within myself and given me the confidence to eat better foods and train with my goals in mind."' },
     { id: 3, name: 'Beth Price', review: '"During my plan with Rob, I exceeded even my own expectations by losing 13lb and dropping 2 dress sizes from a size 12 to a size 8!"' },
 ]
 const Home = () => {
+    const [services, setServices] = useState([])
+    useEffect(() => {
+        fetch('services.json')
+            .then(res => res.json())
+            .then(data => setServices(data))
+    }, [])
     return (
         <div>
             <div className='row'>
@@ -54,9 +29,9 @@ const Home = () => {
                     <img src={banner} alt="" />
                 </div>
             </div>
-            <div className="services">
+            <div className="services" >
                 <h1 className='text-center text-black p-5'>UpComing Services</h1>
-                <div className='service'>
+                <div className='service' id='service'>
                     {
                         services.map(service => <Service
                             key={service.id}

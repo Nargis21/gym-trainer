@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
-    height: 300px;
+    height: 200px;
 }
 
 .footer-container a {
