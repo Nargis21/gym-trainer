@@ -6,9 +6,6 @@
     border-radius: 8px;
     display: flex;
     justify-content: center;
-}
-
-.form-container p {
     text-align: center;
 }
 
@@ -17,15 +14,11 @@
     font-weight: 400;
     color: #2A414F;
     text-align: center;
+    margin: 20px 0;
 }
 
 .input-group {
     margin-bottom: 20px;
-}
-
-.input-group label {
-    display: block;
-    margin: 5px;
 }
 
 .input-group input {
@@ -35,6 +28,7 @@
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 20px;
+    padding-right: 20px;
 }
 
 .form-submit {
@@ -45,6 +39,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .form-submit:hover {
@@ -65,7 +60,13 @@
 }
 
 .line {
-    width: 180px;
+    width: 200px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .google-btn {
@@ -78,8 +79,8 @@
     margin-bottom: 30px;
     background-color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -88,9 +89,14 @@
     font-weight: 400;
     font-size: 17px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .google-btn img {
     width: 32px;
     height: 32px;
+}
+
+.reset-btn {
+    cursor: pointer;
 }
