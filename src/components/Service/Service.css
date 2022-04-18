@@ -1,9 +1,10 @@
 .service-container {
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
     margin: 20px;
+    background-color: white;
 }
 
 .service-container img {
@@ -12,8 +13,9 @@
 
 .bookNow-btn {
     padding: 10px 40px;
-    background-color: black;
-    color: white;
+    background-color: #C2A43B;
+    color: black;
+    font-weight: 600;
     border: none;
     border-radius: 10px;
 }

@@ -9,6 +9,7 @@ import SignUp from './components/SignUp/SignUp';
 import Checkout from './components/Checkout/Checkout';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import NotFound from './components/NotFound/NotFound';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div>
@@ -25,6 +26,7 @@ function App() {
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

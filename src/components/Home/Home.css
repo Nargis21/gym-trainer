@@ -18,6 +18,10 @@ img {
 
 }
 
+.services {
+    background-color: lightgray
+}
+
 @media only screen and (max-width: 576px) {
     .service {
         grid-template-columns: repeat(1, 1fr);

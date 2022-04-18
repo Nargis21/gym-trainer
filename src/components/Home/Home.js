@@ -48,14 +48,16 @@ const Home = () => {
                     <img src={banner} alt="" />
                 </div>
             </div>
-            <h1 className='text-center text-black'>My Services</h1>
-            <div className='service'>
-                {
-                    services.map(service => <Service
-                        key={service.id}
-                        service={service}
-                    ></Service>)
-                }
+            <div className="services">
+                <h1 className='text-center text-black p-5'>UpComing Services</h1>
+                <div className='service'>
+                    {
+                        services.map(service => <Service
+                            key={service.id}
+                            service={service}
+                        ></Service>)
+                    }
+                </div>
             </div>
         </div>
     );
