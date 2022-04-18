@@ -6,6 +6,7 @@ import service2 from '../../images/service2.jpg'
 import service3 from '../../images/service3.jpg'
 import service4 from '../../images/service4.jpg'
 import Service from '../Service/Service';
+import Review from '../Review/Review';
 
 const services = [
     {
@@ -34,6 +35,11 @@ const services = [
     },
 
 ]
+const reviews = [
+    { id: 1, name: '​Lucy Eagles', review: '"Rob is great, always there with help and advise which you can trust to talk to. I can now train at home saving time whilst being more efficient."' },
+    { id: 2, name: '​Alison Salkeld-Brown', review: '"Robs online coaching has helped me feel more comfortable within myself and given me the confidence to eat better foods and train with my goals in mind."' },
+    { id: 3, name: 'Beth Price', review: '"During my plan with Rob, I exceeded even my own expectations by losing 13lb and dropping 2 dress sizes from a size 12 to a size 8!"' },
+]
 const Home = () => {
     return (
         <div>
@@ -56,6 +62,17 @@ const Home = () => {
                             key={service.id}
                             service={service}
                         ></Service>)
+                    }
+                </div>
+            </div>
+            <div className="reviews">
+                <h1 className='text-center text-black p-5'>What My Amazing Clients Say</h1>
+                <div className="review">
+                    {
+                        reviews.map(review => <Review
+                            key={review.id}
+                            review={review}
+                        ></Review>)
                     }
                 </div>
             </div>
