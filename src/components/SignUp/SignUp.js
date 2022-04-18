@@ -13,7 +13,7 @@ const SignUp = () => {
     if (user) {
         navigate('/home')
     }
-    const [signInWithGoogle, Googleuser, loading, Googleerror] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, googleError] = useSignInWithGoogle(auth);
 
     const handleEmailBlur = event => {
         setEmail(event.target.value)
@@ -51,7 +51,7 @@ const SignUp = () => {
 
                         <input onBlur={handleConfirmPasswordBlur} type="password" placeholder='Confirm Password' required />
                     </div>
-                    <p style={{ color: 'red' }}>{error}</p>
+                    <p style={{ color: 'red' }}>{error || googleError?.message}</p>
                     <input className='form-submit' type="submit" value="Sign Up" />
                 </form>
                 <p>

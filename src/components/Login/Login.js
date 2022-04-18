@@ -31,7 +31,7 @@ const Login = () => {
         navigate(from, { replace: true })
     }
 
-    const [signInWithGoogle, Googleuser, Googleloading, Googleerror] = useSignInWithGoogle(auth);
+    const [signInWithGoogle, googleError] = useSignInWithGoogle(auth);
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(
         auth
     );
@@ -56,7 +56,7 @@ const Login = () => {
                     <div className="input-group">
                         <input onBlur={handlePasswordBlur} type="password" placeholder='Password' required />
                     </div>
-                    <p style={{ color: 'red' }}>{error?.message}</p>
+                    <p style={{ color: 'red' }}>{error?.message || googleError?.message}</p>
                     {
                         loading && <p>Loading...</p>
                     }
