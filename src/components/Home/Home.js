@@ -17,15 +17,15 @@ const Home = () => {
             .then(data => setServices(data))
     }, [])
     return (
-        <div>
-            <div className='row'>
-                <div className="col-sm-12 col-lg-6 bg-black pe-0 d-flex justify-content-center align-items-center">
+        <div className=''>
+            <div className='row home'>
+                <div className="col-sm-12 col-md-12 col-lg-6 bg-black pe-0 d-flex justify-content-center align-items-center">
                     <div className='px-5'>
                         <h1 className='title'><span>Take Your Fitness To</span><br /> The Next Level</h1>
                         <h4 className='text-white py-3'>PREMIUM ONLINE & INDIVIDUAL PERSONAL TRAINING IN FAREHAM WITH ROBERT COTTERILL</h4>
                     </div>
                 </div>
-                <div className="col-sm-12 col-lg-6 ps-0">
+                <div className="col-sm-12 col-md-12 col-lg-6 ps-0">
                     <img src={banner} alt="" />
                 </div>
             </div>

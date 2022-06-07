@@ -4,6 +4,11 @@
     font-weight: 200;
 }
 
+.home {
+    height: 520px;
+    background-color: black;
+}
+
 .title span {
     color: #C2A43B;
 }
